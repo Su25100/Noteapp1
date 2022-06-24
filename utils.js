@@ -1,6 +1,5 @@
 //console.log('utils.js')
 
-const name = 'bike';
+const name = 'mike';
 
 module.exports = name;
-// Hello worlld
