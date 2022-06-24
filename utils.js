@@ -1,5 +1,27 @@
-//console.log('utils.js')
+console.log('surabhi')
 
-const name = 'mike';
+const getNotes = function() {
 
-module.exports = name;
+    return 'your notes...'
+}
+
+module.exports = getNotes
+
+
+
+
+
+
+
+
+
+
+
+
+//const name = 'mike';
+
+/*const add = function(a, b) {
+
+    return a + b
+}
+module.exports = add;*/
