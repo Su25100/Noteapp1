@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Su25100/Noteapp1#readme",
   "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.18",
     "validator": "^13.7.0"
   }
 }
