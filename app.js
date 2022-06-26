@@ -2,10 +2,17 @@
  const validator = require('validator')
  const getNotes = require('./notes.js')
 
+ /*
  const msg = getNotes()
  console.log(msg)
 
  const greenmsg = chalk.blue.inverse.bold('Success!')
  console.log(greenmsg)
+*/
 
- console.log(process.argv[0]) //argv is argument vector which is  used to store the values like array
+ const command = process.argv[2] //argv is argument vector which is  used to store the values like array
+ if (command === 'add') {
+     console.log("adding notes..")
+ } else if (command === 'remove') {
+     console.log("removing notes..")
+ }
