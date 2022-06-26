@@ -7,4 +7,5 @@
 
  const greenmsg = chalk.blue.inverse.bold('Success!')
  console.log(greenmsg)
- console.log(process.argv[0])
+
+ console.log(process.argv[0]) //argv is argument vector which is  used to store the values like array
