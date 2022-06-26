@@ -1,20 +1,43 @@
  const chalk = require('chalk')
  const validator = require('validator')
  const getNotes = require('./notes.js')
+ const yargs = require('yargs')
+ const { describe } = require('yargs')
 
- /*
- const msg = getNotes()
- console.log(msg)
+ //create add command
+ yargs.command({
+         command: 'add',
+         describe: 'adding a note',
+         handler: function() {
+             console.log('adding a new node!')
+         }
+     })
+     //create a command
+ yargs.command({
+         command: 'remove',
+         describe: 'remove note',
+         handler: function() {
+             console.log('removing a note!')
 
- const greenmsg = chalk.blue.inverse.bold('Success!')
- console.log(greenmsg)
-*/
+         }
 
- const command = process.argv[2] //argv is argument vector which is  used to store the values like array
- console.log(process.argv) //to display the title writen with node app.js --title='thisis...'
+     })
+     //create a reading note
+ yargs.command({
+         command: 'read',
+         descibe: 'reading note',
+         handler: function() {
+             console.log('read a note!!')
+         }
+     })
+     //create listing note
+ yargs.command({
+         command: 'List',
+         descibe: 'listing note',
+         handler: function() {
+             console.log('listing out all notes!!')
+         }
+     })
+     //add,remove,read,list
 
- if (command === 'add') {
-     console.log("adding notes..")
- } else if (command === 'remove') {
-     console.log("removing notes..")
- }
+ console.log(yargs.argv)
