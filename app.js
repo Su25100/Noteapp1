@@ -2,17 +2,34 @@
  const validator = require('validator')
  const getNotes = require('./notes.js')
  const yargs = require('yargs')
- const { describe } = require('yargs')
+ const { describe, demandOption } = require('yargs')
 
  //create add command
  yargs.command({
-         command: 'add',
-         describe: 'adding a note',
-         handler: function() {
-             console.log('adding a new node!')
+     command: 'add',
+     describe: 'adding a note',
+     builder: {
+         title: {
+             describe: 'Note title',
+             demandOption: true,
+             type: 'string'
          }
-     })
-     //create a command
+     },
+     body: {
+
+         describe: 'Note body',
+         demandOption: true,
+         type: 'string'
+     },
+
+     handler: function(argv) {
+         console.log('Title: ' + argv.title)
+         console.log('Body: ' + argv.body)
+
+     }
+ })
+
+ //create a command
  yargs.command({
          command: 'remove',
          describe: 'remove note',
@@ -34,6 +51,7 @@
  yargs.command({
          command: 'List',
          descibe: 'listing note',
+
          handler: function() {
              console.log('listing out all notes!!')
          }
