@@ -1,25 +1,25 @@
 {
-  "name": "notes.app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Su25100/Noteapp1.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Su25100/Noteapp1/issues"
-  },
-  "homepage": "https://github.com/Su25100/Noteapp1#readme",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "nodemon": "^2.0.18",
-    "validator": "^13.7.0",
-    "yargs": "^17.5.1"
-  }
+    "name": "notes.app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Su25100/Noteapp1.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Su25100/Noteapp1/issues"
+    },
+    "homepage": "https://github.com/Su25100/Noteapp1#readme",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "nodemon": "^2.0.18",
+        "validator": "^13.7.0",
+        "yargs": "^17.5.1"
+    }
 }
